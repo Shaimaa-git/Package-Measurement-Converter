@@ -71,3 +71,11 @@ public class PackageMeasurementConverter1 {
         }
         return value;
     }
+	
+    // Checks if the given character is non-alphabetical.
+    //return True if the character is non-alphabetical, false otherwise.
+
+    public static boolean isNonAlphabetical(char c) {
+        return "@!#$%^&*()_<>{}[]".indexOf(c) != -1;
+    }
+}
