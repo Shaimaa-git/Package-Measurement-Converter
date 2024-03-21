@@ -59,3 +59,15 @@ public class PackageMeasurementConverter1 {
         return measurements;
     }
 
+     //Calculates the value of the given input string.
+     //return The calculated value.
+    
+    public static int calculateValue(String input) {
+        int value = 0;
+        for (char c : input.toCharArray()) {
+            if (c >= 'a' && c <= 'z') {
+                value += c - 'a' + 1;
+            }
+        }
+        return value;
+    }
